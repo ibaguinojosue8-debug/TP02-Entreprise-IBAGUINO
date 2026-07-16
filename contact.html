@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TechCorp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechCorp</h1>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contactez-nous</h2>
+        <p>Remplissez le formulaire ci-dessous pour nous envoyer un message.</p>
+
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel">
+
+            <label for="sujet">Sujet :</label>
+            <select id="sujet" name="sujet" required>
+                <option value="">-- Choisissez --</option>
+                <option value="devis">Demande de devis</option>
+                <option value="info">Demande d'information</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label>
+                <input type="checkbox" name="accept" required>
+                J'accepte que mes données soient utilisées pour me recontacter.
+            </label>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechCorp - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>;
+
