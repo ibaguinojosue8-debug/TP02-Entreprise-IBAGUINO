@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - TechCorp</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Contact - GabTech</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>TechCorp</h1>
-        <nav aria-label="Menu principal">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<h1>GabTech</h1>
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="about.html">A propos</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-    <main>
-        <h2>Contactez-nous</h2>
-        <p>Remplissez le formulaire ci-dessous pour nous envoyer un message.</p>
+<main>
+<h2>Contactez moi</h2>
+<p>Vous avez un projet ? Envoyez moi un message :</p>
 
-        <form action="#" method="post">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required>
+<form>
+<label for="nom">Nom complet :</label><br>
+<input type="text" id="nom" name="nom" required><br><br>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+<label for="mail">Email :</label><br>
+<input type="email" id="mail" name="mail" required><br><br>
 
-            <label for="tel">Téléphone :</label>
-            <input type="tel" id="tel" name="tel">
+<label for="tel">Téléphone :</label><br>
+<input type="tel" id="tel" name="tel" placeholder="+241..."><br><br>
 
-            <label for="sujet">Sujet :</label>
-            <select id="sujet" name="sujet" required>
-                <option value="">-- Choisissez --</option>
-                <option value="devis">Demande de devis</option>
-                <option value="info">Demande d'information</option>
-                <option value="autre">Autre</option>
-            </select>
+<label for="ville">Ville :</label><br>
+<input type="text" id="ville" name="ville" placeholder="Libreville, Port-Gentil..."><br><br>
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+<label for="sujet">Sujet :</label><br>
+<select id="sujet" name="sujet">
+<option>Demande de devis</option>
+<option>Information</option>
+<option>Formation</option>
+<option>Autre</option>
+</select><br><br>
 
-            <label>
-                <input type="checkbox" name="accept" required>
-                J'accepte que mes données soient utilisées pour me recontacter.
-            </label>
+<label for="msg">Message :</label><br>
+<textarea id="msg" name="msg" rows="5" cols="30"></textarea><br><br>
 
-            <button type="submit">Envoyer</button>
-        </form>
-    </main>
+<input type="checkbox" id="ok" name="ok" required>
+<label for="ok">J'accepte d'être recontacté</label><br><br>
 
-    <footer>
-        <p>&copy; 2025 TechCorp - Tous droits réservés</p>
-    </footer>
+<button type="submit">Envoyer</button>
+</form>
+
+<p>Vous pouvez aussi me joindre directement :</p>
+<p>Email : contact@gabtech.ga</p>
+<p>Téléphone : +241 XX XX XX XX</p>
+<p>Adresse : Libreville, Gabon</p>
+
+</main>
+
+<footer>
+<p>GabTech - Libreville, Gabon - 2025</p>
+</footer>
 
 </body>
-</html>;
-
+</html>
